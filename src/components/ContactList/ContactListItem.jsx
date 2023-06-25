@@ -3,7 +3,7 @@ import { ListItem } from './ContactListItem.styled';
 // import { ContactDeleteBtn } from './ContactDeleteBtn.styled';
 import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/contacts/operations';
-import DeleteIcon from '@mui/icons-material/Delete';
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import { Button } from '@mui/material';
 
 export const ContactListItem = ({ name, number, id }) => {
@@ -18,7 +18,7 @@ export const ContactListItem = ({ name, number, id }) => {
 
   return (
     <ListItem>
-      {name}: <br /> {number}
+      {name}: {number}
       {/* <ContactDeleteBtn type="button" onClick={handleDeleteBtn}>
         Delete
       </ContactDeleteBtn> */}
@@ -28,16 +28,18 @@ export const ContactListItem = ({ name, number, id }) => {
         aria-label="registration"
         sx={{
           margin: '3px 5px',
+          justifyContent: 'flex-end',
           padding: '2px 5px',
+          border: 'none',
           '&:hover': {
-            color: 'rgb(250, 250, 250)',
-            backgroundColor: '#b81515',
-            border: '1px solid #b81515',
+            color: '#b81515',
+            backgroundColor: 'transparent',
+            border: 'none',
           },
         }}
         onClick={handleDeleteBtn}
       >
-        <DeleteIcon />
+        <DeleteForeverIcon />
       </Button>
     </ListItem>
   );

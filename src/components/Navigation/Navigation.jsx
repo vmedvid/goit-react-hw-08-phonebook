@@ -11,7 +11,6 @@ export default function Navigation() {
         <Button
           sx={{
             color: 'white',
-
             fontSize: '20px',
             '&:hover': {
               color: 'rgb(0, 0, 0)',

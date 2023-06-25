@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 export const ListItem = styled.li`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 5px;
   font-size: 20px;
   border: 1px solid #d6e8f6;

@@ -26,7 +26,6 @@ export default function UserMenu() {
           variant="contained"
           type="button"
           sx={{
-    
             backgroundColor: '#c85858',
             '&:hover': {
               color: 'rgb(192, 192, 192)',

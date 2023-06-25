@@ -1,6 +1,7 @@
 import { Typography, Button, Container } from '@mui/material';
 import { Link } from 'react-router-dom';
 import Footer from 'components/Footer/Footer';
+import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 
 export default function Home() {
   return (
@@ -12,15 +13,30 @@ export default function Home() {
           flexWrap: 'wrap',
           justifyContent: 'center',
           alignItems: 'center',
-          gap: 15,
-          mb: 15,
-          pt: 10,
-          pb: 10,
+          gap: 3,
+          mb: 5,
+          pt: 4,
+          pb: 4,
         }}
       >
         <Typography variant="h2" sx={{ fontWeight: 700, textAlign: 'center' }}>
           Save contacts in your Phone book!
         </Typography>
+        <Container
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <ContactPhoneIcon
+            type="icon"
+            sx={{
+              fill: 'rgb(255, 243, 70)',
+              width: '200px',
+              height: '200px',
+            }}
+          />
+        </Container>
 
         <Button
           variant="contained"
@@ -29,6 +45,7 @@ export default function Home() {
           aria-label="registration"
           size="large"
           sx={{
+            mt: 5,
             padding: '15px 30px',
             borderRadius: 4,
             border: 1,
